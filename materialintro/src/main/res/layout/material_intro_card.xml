@@ -11,18 +11,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/cardview_margin"
-        android:background="@android:color/white"
+        app:cardBackgroundColor="@color/colorWhite"
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp"
         app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
         app:contentPadding="0dp">
 
         <LinearLayout
             android:id="@+id/layout_info_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/imageview_icon"
@@ -30,7 +31,8 @@
                 android:layout_height="20dp"
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/icon_question" />
+                android:src="@drawable/icon_question"
+                android:tint="@color/colorQuestionMarkIcon" />
 
             <View
                 android:layout_width="16dp"
